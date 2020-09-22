@@ -1,37 +1,35 @@
-## Welcome to GitHub Pages
+# Merge_Sort
 
-You can use the [editor on GitHub](https://github.com/MohamadSheikhAlshabab/BLOG/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
+Merge Sort is a Divide and Conquer algorithm. It divides the input array into two halves, calls itself for the two halves, and then merges the two sorted halves. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Challenge Description
 
-### Markdown
+![img](https://www.geeksforgeeks.org/wp-content/uploads/Merge-Sort-Tutorial.png)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Approach & Efficiency
 
-```markdown
-Syntax highlighted code block
+- __Time Complexity__: ![img](https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-9a23201324ac0d925d9337f1ff4ec68f_l3.svg)
+- __Space Complexity__: O(n)
 
-# Header 1
-## Header 2
-### Header 3
+## Solution
 
-- Bulleted
-- List
+[URL](https://drive.google.com/file/d/1eHvZNC8hRulfrNoMc5c9QoyOgXb7-DSM/view?usp=sharing)
 
-1. Numbered
-2. List
+## Visual
 
-**Bold** and _Italic_ and `Code` text
+Example:
+``` [8,4,23,42,16,15]
 
-[Link](url) and ![Image](src)
+1-   [8,4,23]     [42,16,15] # divided into halves 
+      /  \          /  \
+2- [8] [4,23]     [42] [16,15] # divided into halves 
+   /     /  \      /     /  \ 
+3- [8]  [4] [23]  [42]  [16] [15] # divided into halves until just one element inside each list
+4- [8]  [4] [23]  [42]  [15] [16]
+5- [4]  [8] [23]  [15]  [16] [42]
+6- [4]  [8] [15]  [16]  [23] [42]
+7- [4]  [8,15]   [16]   [23,42]
+8- [4,8,15]      [16,23,42]
+9- [4,8,15,16,23,42]
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/MohamadSheikhAlshabab/BLOG/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+  
