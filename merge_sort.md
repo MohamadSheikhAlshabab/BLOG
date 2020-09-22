@@ -14,3 +14,22 @@ Merge Sort is a Divide and Conquer algorithm. It divides the input array into tw
 ## Solution
 
 [URL](https://drive.google.com/file/d/1eHvZNC8hRulfrNoMc5c9QoyOgXb7-DSM/view?usp=sharing)
+
+## Visual
+
+Example:
+``` [8,4,23,42,16,15]
+
+1-   [8,4,23]     [42,16,15] # divided into halves 
+      /  \          /  \
+2- [8] [4,23]     [42] [16,15] # divided into halves 
+   /     /  \      /     /  \ 
+3- [8]  [4] [23]  [42]  [16] [15] # divided into halves until just one element inside each list
+4- [8]  [4] [23]  [42]  [15] [16]
+5- [4]  [8] [23]  [15]  [16] [42]
+6- [4]  [8] [15]  [16]  [23] [42]
+7- [4]  [8,15]   [16]   [23,42]
+8- [4,8,15]      [16,23,42]
+9- [4,8,15,16,23,42]
+```
+  
